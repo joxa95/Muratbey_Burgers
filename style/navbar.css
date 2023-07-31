@@ -232,7 +232,7 @@ input::-webkit-inner-spin-button {
 }
 @media only screen and (max-height: 900px) {
   .shoping-cart-items {
-    height: 380px;
+    height: 370px;
     overflow: auto;
   }
 }

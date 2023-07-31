@@ -52,22 +52,7 @@ document.addEventListener("click", (e) => {
       foodName.classList.add("foood");
       removeBtn.classList.add("revomeBtn");
 
-      // removeBtn.addEventListener("click", function () {
-      //   // Remove the foodLine element from its parent (assuming it has a parent element)
-      //   if (foodLine.parentNode) {
-      //     foodLine.parentNode.removeChild(foodLine);
-      //   }
-      // });
-
-      // function removeFoodLine() {
-      //   if (foodLine.parentNode) {
-      //     const cost = parseFloat(foodCost.textContent);
-      //     total.textContent = parseFloat(total.textContent) - cost;
-      //     foodLine.parentNode.removeChild(foodLine);
-      //   }
-      // }
-
-      // Add a click event listener to the removeBtn
+      // remove FoodLine on click
       removeBtn.addEventListener("click", removeFoodLine);
 
       ///
@@ -106,6 +91,7 @@ document.addEventListener("click", (e) => {
       function removeFoodLine() {
         if (foodLine.parentNode) {
           const cost = parseFloat(foodCost.textContent);
+          console.log(cost);
           const currentTotal = parseFloat(total.textContent);
           totalCost -= cost;
           total.textContent = currentTotal - cost;
@@ -118,6 +104,9 @@ document.addEventListener("click", (e) => {
           }
 
           foodLine.parentNode.removeChild(foodLine);
+          foodsCount.innerHTML -=
+            1 +
+            Number(document.querySelector(`[data-paraid="${myId}"]`).innerHTML);
         }
       }
       // console.log(foodNamesArray);
