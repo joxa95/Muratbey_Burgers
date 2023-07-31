@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/side-bar.css" />
+    <link rel="stylesheet" href="./style/content.css" />
+    <!--------------- font awesom --------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!---------------google fonts --------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--navbar  -->
+    <div class="navbar">
+      <!--side-bar  -->
+      <div class="side-bar">
+        <header class="side-bar-header">
+          <!--close-btn -->
+          <div class="close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <!--logo -->
+          <img src="./pictures/logo.png" alt="" />
+          <h1>MENU</h1>
+          <!--menu items -->
+        </header>
+        <!-- <div class="side-bar-content"> -->
+        <div class="menu">
+          <div data-id="0" class="item">LAVASH</div>
+          <div data-id="1" class="item">DONAR</div>
+          <div data-id="2" class="item">GAMBURGER</div>
+          <div data-id="3" class="item">HOT DOG</div>
+          <div data-id="4" class="item">SALQIN ICHMLIKLAR</div>
+        </div>
+        <!-- <div class="side-bar-content"> -->
+        <div class="side-bar-content">
+          <hr class="hr" />
+          <div class="adress">
+            <h4>Manzil:</h4>
+            <p>Chortoq "Imkon kredit" savdo markazi yonida</p>
+            <h4>Telefon:</h4>
+            <p>+99893 470 00 30</p>
+          </div>
+          <iframe
+            class="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.8468182505906!2d71.80665751433199!3d41.0756889269494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb53dba2afa359%3A0xd8244f7f65a69a72!2sMuratbey%20Burgers!5e0!3m2!1sru!2s!4v1690310208293!5m2!1sru!2s"
+            width="100%"
+            height="250"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!--navbar items -->
+      <div class="nav-items">
+        <!--menu-btn  -->
+        <i class="menu-btn fas fa-bars"></i>
+
+        <h2>Muratbey Burgers</h2>
+
+        <!--navbar cart -->
+        <div class="cart">
+          <i class="fa-solid fa-cart-plus fa-lg"></i>
+          <div class="cart-count"></div>
+        </div>
+
+        <!-- order card -->
+        <div class="cart-overlay">
+          <div class="cart-content">
+            <i class="fas fa-times close-shoping-card"></i>
+
+            <h2>Buyurtmalar</h2>
+            <!-- Place your content to display the items in the   cart here -->
+            <div class="shoping-cart-items"></div>
+            <div class="form-div">
+              <form class="form">
+                <div class="total-div">
+                  Jami:&nbsp
+                  <p class="total"></p>
+                  <span>&nbsp sum</span>
+                </div>
+                <input type="text" class="text-input" placeholder="Ismingiz" />
+                <input
+                  type="number"
+                  class="number-input"
+                  placeholder="Telefon raqamingiz"
+                />
+
+                <textarea
+                  placeholder="Qo'shimcha o'zgartirish (masalan: ketchup solinmasin)"
+                  name=""
+                  class="textarea"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+                <button class="submit-btn">Tasdiqlash</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h2 class="workingHour-H">HUSH KELIBSIZ!</h2>
+      <p class="workingHour-P">
+        Ish vaqtimiz soat <strong> 8:00</strong> dan
+        <strong> 24:00</strong> gacha.
+      </p>
+      <div class="food-cards"></div>
+    </div>
+
+    <script src="./script/add-remove-calsses.js"></script>
+    <script src="./script/workingHour.js"></script>
+    <script src="./script/foods.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/send-message.js"></script>
+  </body>
+</html>
