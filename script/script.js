@@ -59,13 +59,13 @@ document.addEventListener("click", (e) => {
       //   }
       // });
 
-      function removeFoodLine() {
-        if (foodLine.parentNode) {
-          const cost = parseFloat(foodCost.textContent);
-          total.textContent = parseFloat(total.textContent) - cost;
-          foodLine.parentNode.removeChild(foodLine);
-        }
-      }
+      // function removeFoodLine() {
+      //   if (foodLine.parentNode) {
+      //     const cost = parseFloat(foodCost.textContent);
+      //     total.textContent = parseFloat(total.textContent) - cost;
+      //     foodLine.parentNode.removeChild(foodLine);
+      //   }
+      // }
 
       // Add a click event listener to the removeBtn
       removeBtn.addEventListener("click", removeFoodLine);
@@ -93,7 +93,7 @@ document.addEventListener("click", (e) => {
       /// total
 
       total.innerHTML = totalCost;
-
+      console.log(totalCost);
       /// foodName list
 
       let foodNamesNodeList = document.querySelectorAll(".foood");
@@ -103,6 +103,23 @@ document.addEventListener("click", (e) => {
         foodNamesArray.push(value.textContent);
       });
 
+      function removeFoodLine() {
+        if (foodLine.parentNode) {
+          const cost = parseFloat(foodCost.textContent);
+          const currentTotal = parseFloat(total.textContent);
+          totalCost -= cost;
+          total.textContent = currentTotal - cost;
+
+          // Remove the food name from foodNamesArray
+          const foodNameToRemove = foodName.textContent;
+          const indexToRemove = foodNamesArray.indexOf(foodNameToRemove);
+          if (indexToRemove !== -1) {
+            foodNamesArray.splice(indexToRemove, 1);
+          }
+
+          foodLine.parentNode.removeChild(foodLine);
+        }
+      }
       // console.log(foodNamesArray);
       ///// count
 
