@@ -52,7 +52,22 @@ document.addEventListener("click", (e) => {
       foodName.classList.add("foood");
       removeBtn.classList.add("revomeBtn");
 
-      // remove FoodLine on click
+      // removeBtn.addEventListener("click", function () {
+      //   // Remove the foodLine element from its parent (assuming it has a parent element)
+      //   if (foodLine.parentNode) {
+      //     foodLine.parentNode.removeChild(foodLine);
+      //   }
+      // });
+
+      // function removeFoodLine() {
+      //   if (foodLine.parentNode) {
+      //     const cost = parseFloat(foodCost.textContent);
+      //     total.textContent = parseFloat(total.textContent) - cost;
+      //     foodLine.parentNode.removeChild(foodLine);
+      //   }
+      // }
+
+      // Add a click event listener to the removeBtn
       removeBtn.addEventListener("click", removeFoodLine);
 
       ///
@@ -79,9 +94,28 @@ document.addEventListener("click", (e) => {
 
       total.innerHTML = totalCost;
       console.log(totalCost);
+
       /// foodName list
 
       let foodNamesNodeList = document.querySelectorAll(".foood");
+
+      /// Food count
+
+      foodCounter += Number(
+        document.querySelector(`[data-paraid="${myId}"]`).innerHTML
+      );
+      console.log(document.querySelector(`[data-paraid="${myId}"]`).innerHTML);
+      console.log(foodCounter);
+
+      if (foodCounter > 0) {
+        foodsCount.style.visibility = "visible";
+        totalDiv.style.visibility = "visible";
+      }
+
+      ///// foodsCount
+      foodsCount.innerHTML = foodCounter;
+
+      console.log(foodsCount);
 
       foodNamesArray = [];
       foodNamesNodeList.forEach((value) => {
@@ -104,25 +138,11 @@ document.addEventListener("click", (e) => {
           }
 
           foodLine.parentNode.removeChild(foodLine);
-          foodsCount.innerHTML -=
-            1 +
-            Number(document.querySelector(`[data-paraid="${myId}"]`).innerHTML);
+          foodsCount.innerHTML -= 1;
+          foodCounter -= 1;
         }
       }
       // console.log(foodNamesArray);
-      ///// count
-
-      foodCounter += Number(
-        document.querySelector(`[data-paraid="${myId}"]`).innerHTML
-      );
-
-      if (foodCounter > 0) {
-        foodsCount.style.visibility = "visible";
-        totalDiv.style.visibility = "visible";
-      }
-
-      ///// foodsCount
-      foodsCount.innerHTML = foodCounter;
 
       function backTo1() {
         document.querySelector(`[data-paraid="${myId}"]`).innerHTML = 1;
