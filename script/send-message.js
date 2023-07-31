@@ -104,7 +104,7 @@ submitBtn.addEventListener("click", function (form) {
             error
           );
         });
-    }, 300);
+    }, 100);
   }
 
   function getLocation() {
