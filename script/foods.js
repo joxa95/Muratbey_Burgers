@@ -45,7 +45,7 @@ const fastFoodData = [
   ],
   [
     {
-      name: "Gamburger",
+      name: "Gamburger 8",
       ingredients:
         "Tovuq go'shtli kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez va sirli sous",
       prise: 8000,
@@ -53,7 +53,7 @@ const fastFoodData = [
       // soldOut: false,
     },
     {
-      name: "Gamburger",
+      name: "Gamburger 10",
       ingredients:
         "Tovuq go'shtli kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 10000,
@@ -62,20 +62,20 @@ const fastFoodData = [
       // soldOut: false,
     },
     {
-      name: "Gamburger",
+      name: "Gamburger 12",
       ingredients:
         "Mol go'shtili kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 12000,
-      photoName: "././pictures/hamburger.jpg",
+      photoName: "././pictures/gamburger/gamburger12000.png",
 
       // soldOut: false,
     },
     {
-      name: "Gamburger",
+      name: "Gamburger 18",
       ingredients:
         "2 x mol go'shtili kotlet, salat barg, sir, pomidor, bodring, piyoz, ketchup, mayonez, sirli sous va chips ",
       prise: 18000,
-      photoName: "././pictures/hamburger.jpg",
+      photoName: "././pictures/gamburger/gamburger18000.png",
 
       // soldOut: false,
     },
@@ -84,45 +84,45 @@ const fastFoodData = [
       ingredients:
         "Mol go'shtili kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 20000,
-      photoName: "././pictures/hamburger.jpg",
+      photoName: "././pictures/gamburger/chizburger.png",
 
       // soldOut: false,
     },
   ],
   [
     {
-      name: "Hot Dog ",
+      name: "Hot Dog 10",
       ingredients:
         "2 x To'htaniyoz sosiska, sabzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 10000,
-      photoName: "././pictures/hotdog.jpg",
+      photoName: "././pictures/hot-dog/hotdog10000.png",
 
       // soldOut: false,
     },
     {
-      name: "Hot Dog ",
+      name: "Hot Dog 12",
       ingredients:
         "2 x kanadskaya sosiska, sabzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 12000,
-      photoName: "././pictures/hotdog.jpg",
+      photoName: "././pictures/hot-dog/hotdog12000.png",
 
       // soldOut: false,
     },
     {
-      name: "Hot Dog ",
+      name: "Hot Dog 15",
       ingredients:
         "2 x Venskaya sosiska, sabzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 15000,
-      photoName: "././pictures/hotdog.jpg",
+      photoName: "././pictures/hot-dog/hotdog15000.png",
 
       // soldOut: false,
     },
     {
-      name: "Hot Dog ",
+      name: "Hot Dog 18",
       ingredients:
         "Mol go'shti 80g, sabzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 18000,
-      photoName: "././pictures/hotdog.jpg",
+      photoName: "././pictures/hot-dog/hotdog18000.png",
 
       // soldOut: false,
     },
@@ -130,7 +130,7 @@ const fastFoodData = [
   [
     {
       name: "Coca Cola 1,5L",
-      ingredients: "sir pomidor .....",
+      // ingredients: "sir pomidor .....",
       prise: 12000,
       photoName:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
