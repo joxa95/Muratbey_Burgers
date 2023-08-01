@@ -2,21 +2,24 @@ const fastFoodData = [
   [
     {
       name: "Lavash oddiy",
-      // ingredients: "Ketchup mayonez sous gusht 60g pomidor bodring",
+      ingredients:
+        "Mol go'shti 60g, Ketchup, mayonez, sous, pomidor va bodring",
       prise: 20000,
       photoName: "././pictures/lavash.png",
       // soldOut: false,
     },
     {
       name: "Lavash sirli",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      ingredients:
+        "Mol go'shti 80g, ketchup, mayonez, sous, pomidor, bodring, sir va salat barg ",
       prise: 26000,
       photoName: "././pictures/lavash.png",
       // soldOut: false,
     },
     {
       name: "Lavash zakaznoy",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "Mol go'sht 100g, Ketchup, mayonez, sous, pomidor, bodring, sir va salat barg",
       prise: 30000,
       photoName: "././pictures/lavash.png",
       soldOut: false,
@@ -25,14 +28,16 @@ const fastFoodData = [
   [
     {
       name: "Donar oddiy",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "Mol go'shti 80g, salat barg, chips, pomidor, bodring, tomat sousi, ketchup va mayonez",
       prise: 15000,
       photoName: "././pictures/doner.jpg",
       // soldOut: false,
     },
     {
       name: "Donar sirli",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      ingredients:
+        "Sir, mol go'shti 80g, salat barg, chips, pomidor, bodring, tomat sousi,  ketchup va mayonez",
       prise: 18000,
       photoName: "././pictures/doner.jpg",
       // soldOut: false,
@@ -41,14 +46,16 @@ const fastFoodData = [
   [
     {
       name: "Gamburger",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "Tovuq go'shtli kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez va sirli sous",
       prise: 8000,
       photoName: "././pictures/hamburger.jpg",
       // soldOut: false,
     },
     {
       name: "Gamburger",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      ingredients:
+        "Tovuq go'shtli kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 10000,
       photoName: "././pictures/hamburger.jpg",
 
@@ -56,7 +63,8 @@ const fastFoodData = [
     },
     {
       name: "Gamburger",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      ingredients:
+        "Mol go'shtili kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 12000,
       photoName: "././pictures/hamburger.jpg",
 
@@ -64,15 +72,17 @@ const fastFoodData = [
     },
     {
       name: "Gamburger",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      ingredients:
+        "2 x mol go'shtili kotlet, salat barg, sir, pomidor, bodring, piyoz, ketchup, mayonez, sirli sous va chips ",
       prise: 18000,
       photoName: "././pictures/hamburger.jpg",
 
       // soldOut: false,
     },
     {
-      name: "Gamburger",
-      // ingredients: "Tomato, mozarella, spinach and ricotta cheese ",
+      name: "Cheesburger",
+      ingredients:
+        "Mol go'shtili kotlet, sabzi salat, pomidor, bodring, ketchup, mayonez, sirli sous, salat barg va chips",
       prise: 20000,
       photoName: "././pictures/hamburger.jpg",
 
@@ -82,7 +92,8 @@ const fastFoodData = [
   [
     {
       name: "Hot Dog ",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "2 x To'htaniyoz sosiska, savzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 10000,
       photoName: "././pictures/hotdog.jpg",
 
@@ -90,7 +101,8 @@ const fastFoodData = [
     },
     {
       name: "Hot Dog ",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "2 x kanadskaya sosiska, savzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 12000,
       photoName: "././pictures/hotdog.jpg",
 
@@ -98,7 +110,8 @@ const fastFoodData = [
     },
     {
       name: "Hot Dog ",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "2 x Venskaya sosiska, savzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 15000,
       photoName: "././pictures/hotdog.jpg",
 
@@ -106,7 +119,8 @@ const fastFoodData = [
     },
     {
       name: "Hot Dog ",
-      // ingredients: "sir pomidor .....",
+      ingredients:
+        "Mol go'shti 80g, savzi salat, salat barg, pomidor, bodring, sirli sous, chips, ketchup va mayonez",
       prise: 18000,
       photoName: "././pictures/hotdog.jpg",
 

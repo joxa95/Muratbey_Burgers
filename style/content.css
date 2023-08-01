@@ -56,6 +56,8 @@ body {
   /* box-shadow: 0 3px 8px orange; */
 }
 
+/* Food ingredients */
+
 /* foodcart */
 .foodLine {
   /* border-top: 1px solid #000; */
@@ -119,14 +121,26 @@ body {
 }
 
 .card-items h3 {
+  text-align: center;
   letter-spacing: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.card-items i {
+  text-align: start;
+  padding-bottom: 5px;
+
+  /* background-color: blue; */
+}
+
+.price {
+  color: green;
 }
 
 .card-items p {
   font-size: 1rem;
   /* letter-spacing: 2px; */
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .card button {
@@ -139,7 +153,7 @@ body {
 }
 
 .card button:active {
-  scale: 1.05;
+  scale: 0.95;
 }
 
 .card-buttons {

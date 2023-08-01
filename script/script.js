@@ -178,7 +178,8 @@ function makeCards(foodArray) {
     <img src="${foodArray[food].photoName}" alt="" />
     <div class="card-items">
        <h3 data-h4id="${food}">${foodArray[food].name}</h3>
-       <p >Narxi: <span data-price="${food}">${foodArray[food].prise} </span> sum</p>
+       <i>${foodArray[food].ingredients}</i>
+       <p class="price" >Narxi: <span data-price="${food}">${foodArray[food].prise} </span> sum</p>
        <p  >Soni: <span data-paraid="${food}" class="count">1</span></p>
     </div>
     <div class="card-buttons count">
