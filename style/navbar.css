@@ -236,6 +236,7 @@ input::-webkit-inner-spin-button {
     overflow: auto;
   }
 }
+
 @media only screen and (max-height: 680px) {
   .shoping-cart-items {
     height: 280px;
@@ -257,12 +258,17 @@ input::-webkit-inner-spin-button {
   }
 
   .shoping-cart-items {
-    height: 40%;
+    height: 35%;
     overflow: auto;
   }
 }
+@media only screen and (max-height: 550px) {
+  .shoping-cart-items {
+    height: 25%;
+  }
+}
 
-@media only screen and (max-height: 450px) {
+@media only screen and (max-height: 470px) {
   .cart-content {
     height: 92%;
     overflow: hidden;
@@ -270,7 +276,7 @@ input::-webkit-inner-spin-button {
   }
 
   .shoping-cart-items {
-    height: 120px;
+    height: 140px;
     overflow: auto;
   }
 

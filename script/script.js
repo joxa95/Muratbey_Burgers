@@ -101,20 +101,25 @@ document.addEventListener("click", (e) => {
 
       /// Food count
 
-      foodCounter += Number(
-        document.querySelector(`[data-paraid="${myId}"]`).innerHTML
-      );
-      console.log(document.querySelector(`[data-paraid="${myId}"]`).innerHTML);
-      console.log(foodCounter);
+      foodCounter += 1;
+      // Number(
+      //   document.querySelector(`[data-paraid="${myId}"]`).innerHTML
+      // );
+      // console.log(document.querySelector(`[data-paraid="${myId}"]`).innerHTML);
 
       if (foodCounter > 0) {
         foodsCount.style.visibility = "visible";
         totalDiv.style.visibility = "visible";
+        document.querySelector(".cart-count").style.display = "flex";
+        document.querySelector(".cart-overlay").style.visibility = "visible";
       }
 
       ///// foodsCount
       foodsCount.innerHTML = foodCounter;
 
+      if (totalCost > 0) {
+        document.querySelector(".total-div").style.display = "flex";
+      }
       console.log(foodsCount);
 
       foodNamesArray = [];
@@ -140,6 +145,14 @@ document.addEventListener("click", (e) => {
           foodLine.parentNode.removeChild(foodLine);
           foodsCount.innerHTML -= 1;
           foodCounter -= 1;
+          if (foodCounter == 0) {
+            document.querySelector(".cart-count").style.display = "none";
+            document.querySelector(".cart-overlay").style.visibility = "hidden";
+          }
+
+          if (totalCost == 0) {
+            document.querySelector(".total-div").style.display = "none";
+          }
         }
       }
       // console.log(foodNamesArray);

@@ -160,6 +160,60 @@ body {
   width: 70px;
 }
 
+.wrong {
+  border: 1px solid red;
+}
+
+.WrongInputName {
+  display: none;
+  color: red;
+}
+.WrongInputNumber {
+  display: none;
+  color: red;
+}
+
+.reload {
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 120px;
+  border: none;
+  background-color: rgb(255, 182, 46);
+  box-shadow: 0 0 8px rgb(128, 128, 128);
+  font-weight: 600;
+}
+
+.reload:active {
+  scale: 0.95;
+}
+
+.success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.success h2 {
+  /* z-index: 2; */
+  font-weight: 600;
+  color: rgb(51, 218, 0);
+}
+
+.success a {
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (min-width: 1000px) {
   .foodLine {
     padding: 4px 110px;

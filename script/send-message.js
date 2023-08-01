@@ -3,21 +3,43 @@ const input2 = document.querySelector(".number-input");
 const submitBtn = document.querySelector(".submit-btn");
 const textarea = document.querySelector(".textarea");
 const form = document.querySelector(".form");
+const WrongInputName = document.querySelector(".WrongInputName");
+const WrongInputNumber = document.querySelector(".WrongInputNumber");
 
 submitBtn.addEventListener("click", function (form) {
   form.preventDefault();
 
   let value1 = input1.value;
-  input1.value = "";
+
+  if (value1.length < 4) {
+    return (
+      input1.classList.add("wrong"), (WrongInputName.style.display = "block")
+    );
+
+    // (input1.placeholder = "Ismingizni to'gri kiriting!"),
+
+    // (input1.value = "")
+  } else {
+    input1.classList.remove("wrong"), (WrongInputName.style.display = "none");
+  }
 
   let value2 = input2.value;
-  input2.value = "";
+  // input2.value = "";
+
+  if (!(value2.length == 12)) {
+    return (
+      input2.classList.add("wrong"), (WrongInputNumber.style.display = "block")
+    );
+    // (input2.placeholder = "Telefon raqamingizni to'gri kiriting!"),
+    // (input2.value = "")
+  } else {
+    input2.classList.remove("wrong"), (WrongInputNumber.style.display = "none");
+    // (input2.placeholder = "Telefon raqamingiz");
+  }
 
   let value3 = textarea.value;
   textarea.value = "";
 
-  console.log(value1);
-  console.log(value2);
   //   console.log(value3);
 
   const BOT_TOKEN = "6012806041:AAG-Wn6RGHzxLQTgjBphTqFtn0r2-OCtJ_Y";
@@ -70,6 +92,7 @@ submitBtn.addEventListener("click", function (form) {
         );
       })
       .finally(() => {
+        document.querySelector(".success").style.display = "flex";
         console.log("finish");
       });
     setTimeout(() => {
@@ -78,17 +101,6 @@ submitBtn.addEventListener("click", function (form) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          parse_mode: "html",
-          latitude: latitude,
-          longitude: longitude,
-          title: "Order Location", // Title for the venue
-          // address: `<b>Zakaz beruvchi: ${value1} </b>\n<b>Telefon raqami: ${
-          //   "+" + value2
-          // } </b>`, // You can provide the address here if needed
-          // text: message,
-        }),
       })
         .then((response) => {
           if (response.ok) {
@@ -104,7 +116,7 @@ submitBtn.addEventListener("click", function (form) {
             error
           );
         });
-    }, 100);
+    }, 800);
   }
 
   function getLocation() {

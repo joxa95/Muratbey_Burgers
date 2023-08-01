@@ -23,6 +23,7 @@
   </head>
   <body>
     <!--navbar  -->
+
     <div class="navbar">
       <!--side-bar  -->
       <div class="side-bar">
@@ -79,8 +80,15 @@
         </div>
 
         <!-- order card -->
-        <div class="cart-overlay">
+
+        <div class="cart-overlay hidden">
           <div class="cart-content">
+            <div class="success">
+              <h2>Buyurtma yuborildi!</h2>
+              <button class="reload">
+                <a href="https://muratbey-burgers.netlify.app/"> Bosh sahifa</a>
+              </button>
+            </div>
             <i class="fas fa-times close-shoping-card"></i>
 
             <h2>Buyurtmalar</h2>
@@ -93,7 +101,13 @@
                   <p class="total"></p>
                   <span>&nbsp sum</span>
                 </div>
+
+                <p class="WrongInputName">Ismingizni t'ogri kiriting!</p>
                 <input type="text" class="text-input" placeholder="Ismingiz" />
+
+                <p class="WrongInputNumber">
+                  Telefon raqamingizni t'ogri kiriting!
+                </p>
                 <input
                   type="number"
                   class="number-input"
