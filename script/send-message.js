@@ -8,7 +8,6 @@ const WrongInputNumber = document.querySelector(".WrongInputNumber");
 
 submitBtn.addEventListener("click", function (form) {
   form.preventDefault();
-
   let value1 = input1.value;
 
   if (value1.length < 4) {
@@ -19,14 +18,12 @@ submitBtn.addEventListener("click", function (form) {
     // (input1.placeholder = "Ismingizni to'gri kiriting!"),
 
     // (input1.value = "")
-  } else {
-    input1.classList.remove("wrong"), (WrongInputName.style.display = "none");
   }
 
   let value2 = input2.value;
   // input2.value = "";
 
-  if (!(value2.length == 12)) {
+  if (!(value2.length == 12 || value2.length == 9)) {
     return (
       input2.classList.add("wrong"), (WrongInputNumber.style.display = "block")
     );
@@ -66,6 +63,9 @@ submitBtn.addEventListener("click", function (form) {
     }
     message += `<b>\n${orders.innerHTML} </b>\n`;
     message += `<b>Jami: ${totalCost}</b>`;
+
+    submitBtn.setAttribute("disabled", "");
+    submitBtn.style.cursor = "no-drop";
 
     fetch(URI_API, {
       method: "POST",

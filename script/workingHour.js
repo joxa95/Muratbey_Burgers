@@ -3,7 +3,7 @@ const workingHour_P = document.querySelector(".workingHour-P");
 
 function workingHour() {
   const Hour = new Date().getHours();
-  const openHour = 0;
+  const openHour = 8;
   const closeHour = 24;
 
   const isOpen = Hour >= openHour && Hour < closeHour;

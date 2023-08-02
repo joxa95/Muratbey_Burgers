@@ -192,9 +192,9 @@ body {
   margin-top: 10px;
   padding: 5px 10px;
   width: 120px;
-  border: none;
+  border: 1px solid white;
   background-color: rgb(255, 182, 46);
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -222,7 +222,8 @@ body {
   /* z-index: 2; */
   letter-spacing: 2px;
   font-weight: 600;
-  color: rgb(148, 255, 49);
+  color: rgb(128, 255, 0);
+  text-shadow: 0 0 10px rgb(112, 112, 112);
 }
 
 .success a {
