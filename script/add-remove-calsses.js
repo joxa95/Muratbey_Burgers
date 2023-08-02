@@ -6,6 +6,7 @@ const cart = document.querySelector(".cart");
 const content = document.querySelector(".content");
 const addToCart = document.querySelector(".add-to-cart");
 const counter = document.querySelector(".counter");
+const items = document.querySelectorAll(".item");
 
 //////////////// shoping cart //////////////
 
@@ -44,9 +45,12 @@ cart.addEventListener("click", function () {
 //   addToCart.style.display = "none";
 // });
 
-// submit.addEventListener("click", function () {
-//   shopingCart.style.display = "none";
-// });
+items.forEach((item) => {
+  item.addEventListener("click", function () {
+    sideBar.classList.remove("active");
+    menuBtn.classList.remove("hidden");
+  });
+});
 
 closeShopingCard.addEventListener("click", function () {
   shopingCart.style.display = "none";

@@ -130,130 +130,114 @@ const fastFoodData = [
   [
     {
       name: "Coca Cola 1,5L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 12000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/cocacola15.png",
       // soldOut: false,
     },
     {
       name: "Coca Cola 1L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 10000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/cocacola1.png",
       // soldOut: false,
     },
     {
       name: "Coca Cola 0,5L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 6000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
-      // soldOut: false,
-    },
-    {
-      name: "Pepsi 1,5L",
-      // ingredients: "sir pomidor .....",
-      prise: 12000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
-      // soldOut: false,
-    },
-    {
-      name: "Pepsi 1L",
-      // ingredients: "sir pomidor .....",
-      prise: 10000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
-      // soldOut: false,
-    },
-    {
-      name: "Pepsi 0,5L",
-      // ingredients: "sir pomidor .....",
-      prise: 6000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/cocacola05.png",
       // soldOut: false,
     },
     {
       name: "Fanta 1,5L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 12000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/fanta15.png",
       // soldOut: false,
     },
     {
       name: "Fanta 1L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 10000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/fanta1.png",
       // soldOut: false,
     },
     {
       name: "Fanta 0,5L",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 6000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/fanta05.png",
+      // soldOut: false,
+    },
+    {
+      name: "Pepsi 1,5L",
+      ingredients: "",
+      prise: 12000,
+      photoName: "././pictures/drinks/pepsi15.png",
+      // soldOut: false,
+    },
+    {
+      name: "Pepsi 1L",
+      ingredients: "",
+      prise: 10000,
+      photoName: "././pictures/drinks/pepsi15.png",
+      // soldOut: false,
+    },
+    {
+      name: "Pepsi 0,5L",
+      ingredients: "",
+      prise: 6000,
+      photoName: "././pictures/drinks/pepsi05.png",
       // soldOut: false,
     },
     {
       name: "Flash 0,5L ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 10000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/flash05.png",
       // soldOut: false,
     },
     {
       name: "Flash 3,3ml ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 8000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/flash33.png",
       // soldOut: false,
     },
     {
       name: "Flash 250ml ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 8000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/flash250.png",
       // soldOut: false,
     },
     {
       name: "Gazli suv 1L ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 3000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/hydrolife1.png",
       // soldOut: false,
     },
     {
       name: "Gazli suv 0.5L ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 2000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/hydrolife05.png",
       // soldOut: false,
     },
     {
       name: "Oddiy suv 1L ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 3000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/silver1.png",
       // soldOut: false,
     },
     {
       name: "Oddiy suv 0.5L ",
-      // ingredients: "sir pomidor .....",
+      ingredients: "",
       prise: 2000,
-      photoName:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/220px-Pizza-3007395.jpg",
+      photoName: "././pictures/drinks/silver05.png",
       // soldOut: false,
     },
   ],

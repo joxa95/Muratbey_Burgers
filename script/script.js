@@ -2,6 +2,7 @@ const foodCards = document.querySelector(".food-cards");
 const shoppingCartItems = document.querySelector(".shoping-cart-items");
 const foodsCount = document.querySelector(".cart-count");
 const totalDiv = document.querySelector(".total-div");
+// const totalDiv = document.querySelector(".total-div");
 
 let foodCounter = 0;
 let totalCost = 0;
@@ -193,5 +194,7 @@ function makeCards(foodArray) {
     foodCards.insertAdjacentHTML("beforeend", markup);
   }
 }
+
+
 
 makeCards(fastFoodData[0]);
