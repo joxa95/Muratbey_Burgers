@@ -18,6 +18,10 @@ submitBtn.addEventListener("click", function (form) {
     // (input1.placeholder = "Ismingizni to'gri kiriting!"),
 
     // (input1.value = "")
+  } else {
+    input1.classList.add("wrong"),
+      (WrongInputName.style.display = "none"),
+      input1.classList.remove("wrong");
   }
 
   let value2 = input2.value;
@@ -64,8 +68,10 @@ submitBtn.addEventListener("click", function (form) {
     message += `<b>\n${orders.innerHTML} </b>\n`;
     message += `<b>Jami: ${totalCost}</b>`;
 
-    submitBtn.setAttribute("disabled", "");
-    submitBtn.style.cursor = "no-drop";
+    // submitBtn.setAttribute("disabled", "");
+    // submitBtn.style.cursor = "no-drop";
+
+    // submitBtn.addEventListener("click", function () {});
 
     fetch(URI_API, {
       method: "POST",
@@ -93,6 +99,8 @@ submitBtn.addEventListener("click", function (form) {
       })
       .finally(() => {
         document.querySelector(".success").style.display = "flex";
+        document.querySelector(".spin").style.display = "none";
+        document.querySelector(".close-shoping-card").display = "none";
         console.log("finish");
       });
     setTimeout(() => {
@@ -121,7 +129,19 @@ submitBtn.addEventListener("click", function (form) {
 
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition, handleError);
+      const options = { enableHighAccuracy: true };
+
+      setTimeout(
+        function () {
+          navigator.geolocation.getCurrentPosition(
+            showPosition,
+            handleError,
+            options
+          );
+        },
+
+        2000
+      );
     } else {
       console.log("Геолокация не поддерживается вашим браузером.");
     }
@@ -153,4 +173,6 @@ submitBtn.addEventListener("click", function (form) {
     }
   }
   getLocation();
+  document.querySelector(".spin").style.display = "flex";
+  document.querySelector(".close-shoping-card").display = "none";
 });

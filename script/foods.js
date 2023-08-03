@@ -208,7 +208,7 @@ const fastFoodData = [
     {
       name: "Flash 250ml ",
       ingredients: "",
-      prise: 8000,
+      prise: 6000,
       photoName: "././pictures/drinks/flash250.png",
       // soldOut: false,
     },
