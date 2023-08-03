@@ -8,6 +8,7 @@ const WrongInputNumber = document.querySelector(".WrongInputNumber");
 
 submitBtn.addEventListener("click", function (form) {
   form.preventDefault();
+  document.querySelector(".spin").style.display = "flex";
   let value1 = input1.value;
 
   if (value1.length < 4) {
@@ -178,6 +179,6 @@ submitBtn.addEventListener("click", function (form) {
     }
   }
   getLocation();
-  document.querySelector(".spin").style.display = "flex";
+
   document.querySelector(".close-shoping-card").display = "none";
 });
