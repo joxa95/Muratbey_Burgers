@@ -179,5 +179,5 @@ submitBtn.addEventListener("click", function (form) {
   }
   getLocation();
   document.querySelector(".spin").style.display = "flex";
-  document.querySelector(".close-shoping-card").display = "none";
+  document.querySelector(".close-shoping-card").style.display = "none";
 });
