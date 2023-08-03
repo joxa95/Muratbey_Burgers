@@ -61,7 +61,12 @@ submitBtn.addEventListener("click", function (form) {
 
     let message = `<i><b>Yangi zakaz</b></i>\n`;
     message += `<b>Zakaz beruvchi: ${value1} </b>\n`;
-    message += `<b>Telefon raqami: ${"+" + value2} </b>\n`;
+    if (value2.length == 9) {
+      message += `<b>Telefon raqami: ${"+" + 998 + value2} </b>\n`;
+    } else {
+      message += `<b>Telefon raqami: ${"+" + value2} </b>\n`;
+    }
+
     if (!value3 == "") {
       message += `<b>Izoh: ${value3} </b>\n`;
     }
