@@ -2,13 +2,13 @@ const workingHour_H = document.querySelector(".workingHour-H");
 const workingHour_P = document.querySelector(".workingHour-P");
 
 function workingHour() {
-  // let Hour = new Date().getHours();
-  let Hour = 23;
+  let Hour = new Date().getHours();
+  // let Hour = 2;
   const openHour = 8;
-  const closeHour = 23;
-  // if (Hour == 0 || Hour == 1) {
-  //   return (Hour = Hour + 23), console.log(Hour);
-  // }
+  const closeHour = 25;
+  if (Hour == 0 || Hour == 1) {
+    return (Hour = Hour + 23), console.log(Hour);
+  }
   console.log(Hour);
   const isOpen = Hour >= openHour && Hour <= closeHour;
   if (isOpen) {
